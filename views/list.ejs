@@ -1,0 +1,17 @@
+<h1>ToDoList</h1>
+<h2><%=list%></h2>
+<h2><%=listDate%></h2>
+<% items.forEach(item=>{%> 
+
+<form action="/delete" method="post">
+<p><%=item.listDate%></p>
+<input type="checkbox" onchange="this.form.submit()" id="item" name="item" value=<%=item._id%>>
+<label for="item" name="item"><%= item.item %></label>
+<input type="hidden" name="checkList" value=<%=list%>>
+</form>
+<% }) %> 
+
+<form action="/" method="post">
+<input type="text" id="todo" name="todo" placeholder="What you want to do?">
+<button type="submit" name="list"  value=<%=list%> for="list">Add</button>
+</form>
