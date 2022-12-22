@@ -21,6 +21,7 @@ const Item = mongoose.model("Item",itemSchema);
 const listSchema = new mongoose.Schema({
     listName:String,
     listItem:[itemSchema],
+    
 });
 
 const List = mongoose.model("List",listSchema);
