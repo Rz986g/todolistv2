@@ -5,6 +5,6 @@ const option = {
     month:"short",
     day:"numeric",
     weekday:"short",
-    timeZone: "Asia/Hong_Kong", 
+    timeZone: "Asia/Hong_Kong",
 }
 return today.toLocaleDateString("en-UK",option)}

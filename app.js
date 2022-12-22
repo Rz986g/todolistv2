@@ -12,7 +12,6 @@ app.use(bodyParser.urlencoded({extended:true}));
 // mongoose.connect('mongodb://localhost:27017/todolistv2');
 mongoose.connect('mongodb+srv://Rccw:Rofusabc1999@cluster0.x3a0wqs.mongodb.net/todolistv2');
 
-
 const itemSchema = new mongoose.Schema({
     listDate:String,
     item:String,
